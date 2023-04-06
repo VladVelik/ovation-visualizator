@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="690.0" prefWidth="432.0"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.vmsosin.ovationvisualizator.GifController">
+
+    <Canvas fx:id="canvas" height="576.0" layoutX="10" layoutY="10" width="412" />
+
+    <Button fx:id="buttonStop" layoutX="88.0" layoutY="643.0"
+            onMouseClicked="#clickStart"
+            prefHeight="25.0" prefWidth="256.0" text="Stop" />
+
+    <Slider fx:id="slider" layoutX="10.0" layoutY="622.0"
+            max="1000" min="100" prefWidth="412" />
+
+    <Text layoutX="14.0" layoutY="611.0"
+          strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Choose the duration of the interval between displays"
+          wrappingWidth="283.71942138671875" />
+
+</AnchorPane>

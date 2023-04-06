@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="810.0" prefWidth="610.0"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.vmsosin.ovationvisualizator.ShowController">
+
+    <Button layoutX="417.0" layoutY="30"
+            onMouseClicked="#reload"
+            prefHeight="25.0" prefWidth="133.0"
+            text="Open another folder" />
+
+    <ComboBox fx:id="fileComboBox"
+              layoutX="61.0" layoutY="30"
+              prefHeight="25.0" prefWidth="332.0" />
+
+    <ImageView fx:id="back"
+               fitHeight="60" fitWidth="60"
+               layoutX="20" layoutY="270"
+               onMouseClicked="#previousFile"
+               rotate="180" />
+
+    <ImageView fx:id="next"
+               fitHeight="60" fitWidth="60"
+               layoutX="532" layoutY="270"
+               onMouseClicked="#nextFile" />
+
+    <Canvas fx:id="canvas" height="585" layoutX="100" layoutY="80" width="412" />
+
+    <Button layoutX="205" layoutY="700"
+            onMouseClicked="#saveAsPng"
+            prefWidth="200" text="Save as PNG" />
+
+    <Button layoutX="205" layoutY="750"
+            onMouseClicked="#showGif"
+            prefWidth="200" text="Show all images quickly" />
+
+</AnchorPane>
